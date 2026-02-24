@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nhóm 3: Chính Sách</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter', sans-serif;
+    background:#ffffff;
+    color:#111;
+    line-height:1.7;
+    padding-top:90px;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(255,255,255,0.9);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid #eee;
+    padding:25px 8%;
+    z-index:1000;
+}
+
+header h1{
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:0.5px;
+}
+
+/* HERO */
+
+.hero{
+    padding:180px 8% 140px;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:64px;
+    font-weight:600;
+    max-width:1000px;
+    margin:auto;
+    line-height:1.1;
+}
+
+.hero p{
+    margin-top:30px;
+    font-size:22px;
+    color:#555;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* VISUAL */
+
+.visual-intro{
+    padding:140px 8%;
+}
+
+.visual-grid{
+    display:flex;
+    flex-direction:column;
+    gap:140px;
+    max-width:1000px;
+    margin:auto;
+}
+.visual-item img{
+    width:100%;
+    border-radius:24px;
+    box-shadow:0 40px 100px rgba(0,0,0,0.08);
+}
+
+.caption{
+    text-align:center;
+    margin-top:18px;
+    font-size:15px;
+    color:#444;
+    font-style:italic;
+}
+
+/* SECTION */
+
+.section{
+    padding:160px 8%;
+    max-width:1100px;
+    margin:auto;
+}
+
+.section h3{
+    font-size:42px;
+    margin-bottom:50px;
+    font-weight:600;
+}
+
+.section p{
+    font-size:19px;
+    margin-bottom:24px;
+    color:#333;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:60px;
+}
+
+.card{
+    padding:45px;
+    border-radius:24px;
+    background:#f7f7f7;
+    transition:0.3s ease;
+}
+
+.card:hover{
+    background:#f0f0f0;
+}
+
+.card h4{
+    font-size:22px;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+/* FOOTER */
+
+.footer{
+    padding:120px;
+    text-align:center;
+    font-size:14px;
+    color:#999;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+    .visual-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h2{
+        font-size:42px;
+    }
+
+    .section h3{
+        font-size:32px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Nhóm 3: Chính Sách</h1>
+</header>
+
+<section class="hero">
+    <h2>Chính sách Tài khóa và Chính sách Tiền tệ trong ổn định kinh tế vĩ mô</h2>
+    <p>Nghiên cứu trong khung phân tích AD–AS và IS–MP.</p>
+</section>
+
+<section class="visual-intro">
+    <div class="visual-grid">
+
+        <div class="visual-item">
+            <img src="assets/files/NotebookLM Mind Map.png" alt="Mind Map Chính sách">
+            <p class="caption">
+                Hình 1. Sơ đồ tư duy về phân tích chính sách kinh tế 
+            </p>
+        </div>
+
+        <div class="visual-item">
+            <img src="assets/files/unnamed.png" alt="Mô hình phân tích">
+            <p class="caption">
+                Hình 2. Hình họa chính sách tài khóa và tiền tệ
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h3>Khái niệm và thông tin cơ bản</h3>
+
+    <div class="grid">
+
+        <div class="card">
+            <h4>Chính sách tài khóa</h4>
+            <p>
+                Chính sách tài khóa là việc Chính phủ điều chỉnh chi tiêu công và thuế nhằm tác động đến tổng cầu, 
+                phân phối thu nhập và ổn định chu kỳ kinh tế.
+            </p>
+            <p>
+                Công cụ chính gồm chi tiêu ngân sách (G), thuế (T) và bội chi ngân sách. 
+                Trong ngắn hạn, tài khóa có tác động trực tiếp đến sản lượng thông qua hiệu ứng số nhân.
+            </p>
+        </div>
+<section class="section">
+    <h3>So sánh công cụ của chính sách tài khóa</h3>
+
+    <p>
+        Chính sách tài khóa vận hành thông qua ba nhóm công cụ chính: chi tiêu chính phủ,
+        thuế và chuyển giao ngân sách. Trong đó, chi tiêu công có tác động trực tiếp và tức thời
+        đến tổng cầu thông qua hiệu ứng số nhân. Tăng chi tiêu vào đầu tư công thường tạo ra
+        tác động lan tỏa lớn hơn so với tăng chi tiêu thường xuyên do khả năng kích thích
+        đầu tư tư nhân và cải thiện năng lực sản xuất dài hạn.
+    </p>
+
+    <p>
+        Thuế là công cụ điều chỉnh gián tiếp. Giảm thuế làm tăng thu nhập khả dụng của hộ gia đình
+        và lợi nhuận của doanh nghiệp, từ đó kích thích tiêu dùng và đầu tư tư nhân.
+        Tuy nhiên, mức độ tác động phụ thuộc vào xu hướng tiêu dùng cận biên,
+        kỳ vọng kinh tế và mức độ tin tưởng của khu vực tư nhân.
+    </p>
+
+    <p>
+        Chuyển giao ngân sách và trợ cấp xã hội giúp ổn định thu nhập trong chu kỳ suy thoái,
+        đóng vai trò như các “bộ ổn định tự động” của nền kinh tế.
+        Khác với chính sách tiền tệ, chính sách tài khóa chịu ràng buộc bởi ngân sách nhà nước
+        và quy trình lập pháp, do đó thường có độ trễ thực thi dài hơn và chịu ảnh hưởng bởi yếu tố chính trị.
+    </p>
+</section>
+        
+        <div class="card">
+            <h4>Chính sách tiền tệ</h4>
+            <p>
+                Chính sách tiền tệ là việc Ngân hàng Trung ương điều chỉnh cung tiền và lãi suất nhằm kiểm soát lạm phát 
+                và ổn định kinh tế vĩ mô.
+            </p>
+            <p>
+                Công cụ chủ yếu gồm lãi suất điều hành, nghiệp vụ thị trường mở và dự trữ bắt buộc. 
+                Trong mô hình hiện đại IS–MP, ngân hàng trung ương kiểm soát lãi suất theo nguyên tắc phản ứng như Taylor Rule.
+            </p>
+        </div>
+<section class="section">
+    <h3>Các công cụ của chính sách tiền tệ</h3>
+
+    <p>
+        Chính sách tiền tệ sử dụng ba công cụ truyền thống: lãi suất điều hành,
+        nghiệp vụ thị trường mở và tỷ lệ dự trữ bắt buộc.
+    </p>
+
+    <p>
+        Lãi suất điều hành là công cụ trung tâm trong khuôn khổ điều hành hiện đại.
+        Ngân hàng trung ương điều chỉnh lãi suất ngắn hạn nhằm tác động đến chi phí vốn,
+        đầu tư và tiêu dùng của khu vực tư nhân. Trong mô hình IS–MP,
+        đây là cơ chế chính quyết định vị trí của đường MP và qua đó ảnh hưởng đến sản lượng cân bằng.
+    </p>
+
+    <p>
+        Nghiệp vụ thị trường mở bao gồm việc mua hoặc bán trái phiếu chính phủ
+        để điều chỉnh thanh khoản của hệ thống ngân hàng.
+        Khi ngân hàng trung ương mua trái phiếu, cung tiền tăng và điều kiện tài chính nới lỏng;
+        khi bán ra, cung tiền giảm và điều kiện tài chính thắt chặt.
+    </p>
+
+    <p>
+        Tỷ lệ dự trữ bắt buộc tác động trực tiếp đến khả năng tạo tiền
+        của hệ thống ngân hàng thương mại. Tuy nhiên, trong thực tiễn hiện đại,
+        công cụ này ít được sử dụng thường xuyên so với lãi suất điều hành
+        do có thể gây biến động mạnh đến thanh khoản.
+    </p>
+
+    <p>
+        Trong bối cảnh khủng hoảng tài chính hoặc suy thoái sâu,
+        các công cụ phi truyền thống như nới lỏng định lượng (Quantitative Easing – QE)
+        cũng được triển khai nhằm ổn định thị trường tài chính
+        và hỗ trợ phục hồi kinh tế.
+    </p>
+</section>
+    </div>
+</section>
+
+<section class="section">
+    <h3>Khung phân tích vĩ mô</h3>
+
+
+    <p>
+        Khung phân tích của báo cáo được xây dựng trên hai hệ mô hình nền tảng: AD–AS và IS–MP.
+        Trong ngắn hạn, do giá cả và tiền lương có tính cứng nhắc, tổng cầu đóng vai trò quyết định
+        đối với sản lượng và việc làm. Chính sách tài khóa và chính sách tiền tệ tác động trực tiếp
+        đến tổng cầu, từ đó làm dịch chuyển đường AD và ảnh hưởng đến sản lượng thực tế cũng như mức giá chung.
+    </p>
+
+    <p>
+        Trong mô hình AD–AS, chính sách tài khóa mở rộng (tăng chi tiêu hoặc giảm thuế) làm tổng cầu tăng,
+        dịch chuyển AD sang phải, qua đó gia tăng sản lượng trong ngắn hạn. Ngược lại, chính sách tiền tệ
+        thắt chặt thông qua tăng lãi suất làm giảm đầu tư và tiêu dùng nhạy cảm lãi suất, khiến AD dịch chuyển sang trái.
+        Sự điều chỉnh của nền kinh tế phụ thuộc vào độ dốc của AS và mức độ kỳ vọng lạm phát.
+    </p>
+
+    <p>
+        Trong mô hình IS–MP hiện đại, chính sách tài khóa tác động thông qua đường IS,
+        phản ánh cân bằng trên thị trường hàng hóa. Chính sách tiền tệ được mô tả bằng đường MP,
+        thể hiện quy tắc điều hành lãi suất của ngân hàng trung ương (thường theo nguyên tắc phản ứng như Taylor).
+        Sự tương tác giữa IS và MP quyết định mức sản lượng và lãi suất cân bằng trong ngắn hạn.
+    </p>
+
+    <p>
+        Như vậy, hai mô hình này bổ sung cho nhau: AD–AS cho thấy tác động tổng thể lên sản lượng và giá cả,
+        trong khi IS–MP giải thích cơ chế truyền dẫn thông qua lãi suất và thị trường tài chính.
+    </p>
+</section>
+
+<section class="section">
+    <h3>Sự phối hợp giữa chính sách tài khóa và tiền tệ</h3>
+
+    <p>
+        Hiệu quả ổn định kinh tế vĩ mô phụ thuộc lớn vào mức độ phối hợp giữa chính sách tài khóa
+        và chính sách tiền tệ. Khi nền kinh tế rơi vào suy thoái sâu, việc đồng thời mở rộng tài khóa
+        và nới lỏng tiền tệ giúp khuếch đại tác động kích thích tổng cầu, qua đó hỗ trợ phục hồi sản lượng và việc làm.
+    </p>
+
+    <p>
+        Ngược lại, nếu chính sách tài khóa mở rộng trong khi tiền tệ thắt chặt nhằm kiểm soát lạm phát,
+        hai chính sách có thể triệt tiêu lẫn nhau và làm giảm hiệu quả điều hành.
+        Trong trường hợp này, lãi suất tăng có thể làm giảm đầu tư tư nhân,
+        từ đó suy yếu hiệu ứng số nhân của chi tiêu công.
+    </p>
+
+    <p>
+        Sự phối hợp hiệu quả đòi hỏi mục tiêu ổn định giá cả và tăng trưởng được xác định rõ ràng,
+        cùng với cơ chế trao đổi thông tin minh bạch giữa chính phủ và ngân hàng trung ương.
+        Tính nhất quán trong định hướng chính sách là yếu tố quyết định để duy trì ổn định kỳ vọng của thị trường.
+    </p>
+</section>
+    <section class="section">
+    <h3>Sự độc lập của chính sách tiền tệ</h3>
+
+    <p>
+        Tính độc lập của ngân hàng trung ương là điều kiện quan trọng để duy trì uy tín trong kiểm soát lạm phát.
+        Khi ngân hàng trung ương chịu áp lực tài trợ thâm hụt ngân sách,
+        nguy cơ lạm phát cao và mất ổn định kỳ vọng sẽ gia tăng.
+    </p>
+
+    <p>
+        Độc lập không có nghĩa là tách rời hoàn toàn khỏi chính phủ,
+        mà là đảm bảo quyền tự chủ trong việc lựa chọn công cụ nhằm đạt được các mục tiêu đã được xác định.
+        Nhiều nghiên cứu thực nghiệm cho thấy mức độ độc lập cao có tương quan với lạm phát thấp và ổn định hơn trong dài hạn.
+    </p>
+
+    <p>
+        Tuy nhiên, trong các giai đoạn khủng hoảng nghiêm trọng,
+        sự phối hợp tạm thời giữa chính sách tiền tệ và tài khóa có thể được tăng cường
+        mà không làm mất đi tính độc lập cơ bản của ngân hàng trung ương,
+        nếu khuôn khổ thể chế vẫn được duy trì rõ ràng.
+    </p>
+</section>
+    <section class="section">
+    <h3>Mô hình cân bằng chung và mở rộng phân tích</h3>
+
+    <p>
+        Bên cạnh các mô hình bán tổng hợp như AD–AS và IS–MP, khung phân tích hiện đại
+        còn được mở rộng trong mô hình cân bằng chung (General Equilibrium).
+        Trong cách tiếp cận này, nền kinh tế được mô tả như một hệ thống tương tác đồng thời
+        giữa hộ gia đình, doanh nghiệp, chính phủ và ngân hàng trung ương,
+        trong đó các quyết định tối ưu được xác định trên cơ sở kỳ vọng hợp lý.
+    </p>
+
+    <p>
+        Trong mô hình cân bằng chung động (DSGE), hộ gia đình tối đa hóa lợi ích liên thời gian,
+        doanh nghiệp tối đa hóa lợi nhuận dưới điều kiện cạnh tranh không hoàn hảo,
+        còn ngân hàng trung ương điều hành lãi suất theo một quy tắc phản ứng (thường là dạng Taylor).
+        Cân bằng kinh tế đạt được khi thị trường hàng hóa, lao động và tài chính đồng thời thỏa mãn điều kiện tối ưu vi mô.
+    </p>
+
+    <p>
+        Khác với AD–AS vốn mang tính mô tả trực quan,
+        mô hình cân bằng chung cho phép phân tích chính sách dựa trên nền tảng vi mô rõ ràng
+        và đánh giá tác động động học của các cú sốc công nghệ, tài khóa hoặc tiền tệ.
+        Điều này giúp giải thích không chỉ tác động ngắn hạn,
+        mà còn sự điều chỉnh kỳ vọng và quỹ đạo dài hạn của nền kinh tế.
+    </p>
+
+    </p>
+</section>
+    <section class="section">
+    <h3>Chủ nghĩa tài khóa và chủ nghĩa tiền tệ</h3>
+
+    <p>
+        Chủ nghĩa tài khóa (Fiscalism) nhấn mạnh vai trò chủ đạo của chi tiêu chính phủ
+        trong việc ổn định chu kỳ kinh tế, đặc biệt trong bối cảnh suy thoái và thất nghiệp cao.
+        Theo quan điểm này, chính sách tài khóa có tác động trực tiếp và mạnh mẽ hơn đến tổng cầu so với tiền tệ.
+    </p>
+
+    <p>
+        Ngược lại, chủ nghĩa tiền tệ (Monetarism) nhấn mạnh vai trò quyết định của cung tiền
+        và kỳ vọng lạm phát. Trường phái này cho rằng kiểm soát lạm phát thông qua
+        chính sách tiền tệ ổn định là điều kiện tiên quyết để đạt được tăng trưởng bền vững.
+    </p>
+
+    <p>
+        Sự tranh luận giữa hai trường phái phản ánh khác biệt về cơ chế truyền dẫn
+        và độ trễ của chính sách. Trong thực tiễn hiện đại,
+        phần lớn các nền kinh tế áp dụng cách tiếp cận tổng hợp,
+        kết hợp linh hoạt cả hai chính sách tùy theo bối cảnh chu kỳ và mục tiêu vĩ mô.
+    </p>
+</section>
+    <section class="footer">
+    © 2026 Nhóm 3 – Báo cáo học thuật Kinh tế vĩ mô
+</section>
+</body>
+</html>
